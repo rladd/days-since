@@ -22,6 +22,7 @@
 		C1AE3FE718A3F7A400774DAB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AE3FCB18A3F7A400774DAB /* CoreData.framework */; };
 		C1AE3FEF18A3F7A400774DAB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C1AE3FED18A3F7A400774DAB /* InfoPlist.strings */; };
 		C1AE3FF118A3F7A400774DAB /* Days_SinceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AE3FF018A3F7A400774DAB /* Days_SinceTests.m */; };
+		C1AE3FFB18A3F85900774DAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1AE3FFA18A3F85900774DAB /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		C1AE3FEC18A3F7A400774DAB /* Days SinceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Days SinceTests-Info.plist"; sourceTree = "<group>"; };
 		C1AE3FEE18A3F7A400774DAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C1AE3FF018A3F7A400774DAB /* Days_SinceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Days_SinceTests.m; sourceTree = "<group>"; };
+		C1AE3FFA18A3F85900774DAB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				C1AE3FDC18A3F7A400774DAB /* Images.xcassets */,
 				C1AE3FD918A3F7A400774DAB /* Days_Since.xcdatamodeld */,
 				C1AE3FCE18A3F7A400774DAB /* Supporting Files */,
+				C1AE3FFA18A3F85900774DAB /* Main.storyboard */,
 			);
 			path = "Days Since";
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1AE3FFB18A3F85900774DAB /* Main.storyboard in Resources */,
 				C1AE3FD218A3F7A400774DAB /* InfoPlist.strings in Resources */,
 				C1AE3FDD18A3F7A400774DAB /* Images.xcassets in Resources */,
 			);
@@ -452,6 +456,7 @@
 				C1AE3FF618A3F7A400774DAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1AE3FF718A3F7A400774DAB /* Build configuration list for PBXNativeTarget "Days SinceTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +465,7 @@
 				C1AE3FF918A3F7A400774DAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
