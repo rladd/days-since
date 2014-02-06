@@ -23,6 +23,7 @@
 		C1AE3FEF18A3F7A400774DAB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C1AE3FED18A3F7A400774DAB /* InfoPlist.strings */; };
 		C1AE3FF118A3F7A400774DAB /* Days_SinceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AE3FF018A3F7A400774DAB /* Days_SinceTests.m */; };
 		C1AE3FFB18A3F85900774DAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1AE3FFA18A3F85900774DAB /* Main.storyboard */; };
+		C1AE3FFE18A3F8EC00774DAB /* eUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AE3FFD18A3F8EC00774DAB /* eUIViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		C1AE3FEE18A3F7A400774DAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C1AE3FF018A3F7A400774DAB /* Days_SinceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Days_SinceTests.m; sourceTree = "<group>"; };
 		C1AE3FFA18A3F85900774DAB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C1AE3FFC18A3F8EC00774DAB /* eUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eUIViewController.h; sourceTree = "<group>"; };
+		C1AE3FFD18A3F8EC00774DAB /* eUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = eUIViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				C1AE3FD618A3F7A400774DAB /* eAppDelegate.h */,
+				C1AE3FFC18A3F8EC00774DAB /* eUIViewController.h */,
+				C1AE3FFD18A3F8EC00774DAB /* eUIViewController.m */,
 				C1AE3FD718A3F7A400774DAB /* eAppDelegate.m */,
 				C1AE3FDC18A3F7A400774DAB /* Images.xcassets */,
 				C1AE3FD918A3F7A400774DAB /* Days_Since.xcdatamodeld */,
@@ -253,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1AE3FFE18A3F8EC00774DAB /* eUIViewController.m in Sources */,
 				C1AE3FD818A3F7A400774DAB /* eAppDelegate.m in Sources */,
 				C1AE3FDB18A3F7A400774DAB /* Days_Since.xcdatamodeld in Sources */,
 				C1AE3FD418A3F7A400774DAB /* main.m in Sources */,
