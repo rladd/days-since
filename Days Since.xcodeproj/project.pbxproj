@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C192E15418A523E3001F5664 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C192E15218A523E3001F5664 /* background.jpg */; };
+		C192E15518A523E3001F5664 /* background_pattern.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C192E15318A523E3001F5664 /* background_pattern.jpg */; };
 		C1AE3FC618A3F7A400774DAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AE3FC518A3F7A400774DAB /* Foundation.framework */; };
 		C1AE3FC818A3F7A400774DAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AE3FC718A3F7A400774DAB /* CoreGraphics.framework */; };
 		C1AE3FCA18A3F7A400774DAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AE3FC918A3F7A400774DAB /* UIKit.framework */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C192E15218A523E3001F5664 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		C192E15318A523E3001F5664 /* background_pattern.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background_pattern.jpg; sourceTree = "<group>"; };
 		C1AE3FC218A3F7A400774DAB /* Days Since.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Days Since.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1AE3FC518A3F7A400774DAB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C1AE3FC718A3F7A400774DAB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -86,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C192E15118A523E3001F5664 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C192E15218A523E3001F5664 /* background.jpg */,
+				C192E15318A523E3001F5664 /* background_pattern.jpg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		C1AE3FB918A3F7A300774DAB = {
 			isa = PBXGroup;
 			children = (
@@ -120,10 +133,11 @@
 		C1AE3FCD18A3F7A400774DAB /* Days Since */ = {
 			isa = PBXGroup;
 			children = (
+				C192E15118A523E3001F5664 /* Resources */,
 				C1AE3FD618A3F7A400774DAB /* eAppDelegate.h */,
+				C1AE3FD718A3F7A400774DAB /* eAppDelegate.m */,
 				C1AE3FFC18A3F8EC00774DAB /* eUIViewController.h */,
 				C1AE3FFD18A3F8EC00774DAB /* eUIViewController.m */,
-				C1AE3FD718A3F7A400774DAB /* eAppDelegate.m */,
 				C1AE3FDC18A3F7A400774DAB /* Images.xcassets */,
 				C1AE3FD918A3F7A400774DAB /* Days_Since.xcdatamodeld */,
 				C1AE3FCE18A3F7A400774DAB /* Supporting Files */,
@@ -238,7 +252,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1AE3FFB18A3F85900774DAB /* Main.storyboard in Resources */,
+				C192E15418A523E3001F5664 /* background.jpg in Resources */,
 				C1AE3FD218A3F7A400774DAB /* InfoPlist.strings in Resources */,
+				C192E15518A523E3001F5664 /* background_pattern.jpg in Resources */,
 				C1AE3FDD18A3F7A400774DAB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
