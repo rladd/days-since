@@ -19,6 +19,14 @@
     
     // Override point for customization after application launch.
     
+    
+    /* Deinfe the background image. */
+    /*
+    UIColor *background = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background.jpg"]];
+    self.window.backgroundColor = background;
+    */
+    
+    
     /*
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
