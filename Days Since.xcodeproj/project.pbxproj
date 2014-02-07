@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C192E15418A523E3001F5664 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C192E15218A523E3001F5664 /* background.jpg */; };
+		C192E15A18A54C25001F5664 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C192E15818A54C25001F5664 /* CoreData.xcdatamodeld */; };
 		C1AE3FC618A3F7A400774DAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AE3FC518A3F7A400774DAB /* Foundation.framework */; };
 		C1AE3FC818A3F7A400774DAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AE3FC718A3F7A400774DAB /* CoreGraphics.framework */; };
 		C1AE3FCA18A3F7A400774DAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AE3FC918A3F7A400774DAB /* UIKit.framework */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		C192E15218A523E3001F5664 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		C192E15918A54C25001F5664 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 		C1AE3FC218A3F7A400774DAB /* Days Since.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Days Since.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1AE3FC518A3F7A400774DAB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C1AE3FC718A3F7A400774DAB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -139,6 +141,7 @@
 				C1AE3FD918A3F7A400774DAB /* Days_Since.xcdatamodeld */,
 				C1AE3FCE18A3F7A400774DAB /* Supporting Files */,
 				C1AE3FFA18A3F85900774DAB /* Main.storyboard */,
+				C192E15818A54C25001F5664 /* CoreData.xcdatamodeld */,
 			);
 			path = "Days Since";
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			files = (
 				C1AE3FFE18A3F8EC00774DAB /* eUIViewController.m in Sources */,
 				C1AE3FD818A3F7A400774DAB /* eAppDelegate.m in Sources */,
+				C192E15A18A54C25001F5664 /* CoreData.xcdatamodeld in Sources */,
 				C1AE3FDB18A3F7A400774DAB /* Days_Since.xcdatamodeld in Sources */,
 				C1AE3FD418A3F7A400774DAB /* main.m in Sources */,
 			);
@@ -488,6 +492,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		C192E15818A54C25001F5664 /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C192E15918A54C25001F5664 /* CoreData.xcdatamodel */,
+			);
+			currentVersion = C192E15918A54C25001F5664 /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		C1AE3FD918A3F7A400774DAB /* Days_Since.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
