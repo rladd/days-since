@@ -1,18 +1,18 @@
 //
-//  eUIViewController.m
+//  eAddEventViewController.m
 //  Days Since
 //
-//  Created by Ross on 2/6/2014.
+//  Created by Ross on 2/9/2014.
 //  Copyright (c) 2014 Element63. All rights reserved.
 //
 
-#import "eUIViewController.h"
+#import "eAddEventViewController.h"
 
-@interface eUIViewController ()
+@interface eAddEventViewController ()
 
 @end
 
-@implementation eUIViewController
+@implementation eAddEventViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,10 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
 	// Do any additional setup after loading the view.
-    
-    
 }
 
 - (void)didReceiveMemoryWarning

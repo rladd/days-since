@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		C192E15418A523E3001F5664 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C192E15218A523E3001F5664 /* background.jpg */; };
 		C192E15A18A54C25001F5664 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C192E15818A54C25001F5664 /* CoreData.xcdatamodeld */; };
+		C1A14AE518A7C4E300407BD0 /* eMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A14AE418A7C4E300407BD0 /* eMainViewController.m */; };
+		C1A14AE818A7C4F700407BD0 /* eOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A14AE718A7C4F700407BD0 /* eOptionsViewController.m */; };
+		C1A14AEB18A7C51E00407BD0 /* eEventsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A14AEA18A7C51E00407BD0 /* eEventsTableViewController.m */; };
+		C1A14AEE18A7C53F00407BD0 /* eAddEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A14AED18A7C53F00407BD0 /* eAddEventViewController.m */; };
+		C1A14AF118A7C69000407BD0 /* eEventItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A14AF018A7C69000407BD0 /* eEventItem.m */; };
 		C1AE3FC618A3F7A400774DAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AE3FC518A3F7A400774DAB /* Foundation.framework */; };
 		C1AE3FC818A3F7A400774DAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AE3FC718A3F7A400774DAB /* CoreGraphics.framework */; };
 		C1AE3FCA18A3F7A400774DAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AE3FC918A3F7A400774DAB /* UIKit.framework */; };
@@ -16,7 +21,6 @@
 		C1AE3FD218A3F7A400774DAB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C1AE3FD018A3F7A400774DAB /* InfoPlist.strings */; };
 		C1AE3FD418A3F7A400774DAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AE3FD318A3F7A400774DAB /* main.m */; };
 		C1AE3FD818A3F7A400774DAB /* eAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AE3FD718A3F7A400774DAB /* eAppDelegate.m */; };
-		C1AE3FDB18A3F7A400774DAB /* Days_Since.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C1AE3FD918A3F7A400774DAB /* Days_Since.xcdatamodeld */; };
 		C1AE3FDD18A3F7A400774DAB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1AE3FDC18A3F7A400774DAB /* Images.xcassets */; };
 		C1AE3FE418A3F7A400774DAB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AE3FE318A3F7A400774DAB /* XCTest.framework */; };
 		C1AE3FE518A3F7A400774DAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AE3FC518A3F7A400774DAB /* Foundation.framework */; };
@@ -25,7 +29,6 @@
 		C1AE3FEF18A3F7A400774DAB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C1AE3FED18A3F7A400774DAB /* InfoPlist.strings */; };
 		C1AE3FF118A3F7A400774DAB /* Days_SinceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AE3FF018A3F7A400774DAB /* Days_SinceTests.m */; };
 		C1AE3FFB18A3F85900774DAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1AE3FFA18A3F85900774DAB /* Main.storyboard */; };
-		C1AE3FFE18A3F8EC00774DAB /* eUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AE3FFD18A3F8EC00774DAB /* eUIViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,16 @@
 /* Begin PBXFileReference section */
 		C192E15218A523E3001F5664 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 		C192E15918A54C25001F5664 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		C1A14AE318A7C4E300407BD0 /* eMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eMainViewController.h; sourceTree = "<group>"; };
+		C1A14AE418A7C4E300407BD0 /* eMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = eMainViewController.m; sourceTree = "<group>"; };
+		C1A14AE618A7C4F700407BD0 /* eOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eOptionsViewController.h; sourceTree = "<group>"; };
+		C1A14AE718A7C4F700407BD0 /* eOptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = eOptionsViewController.m; sourceTree = "<group>"; };
+		C1A14AE918A7C51E00407BD0 /* eEventsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eEventsTableViewController.h; sourceTree = "<group>"; };
+		C1A14AEA18A7C51E00407BD0 /* eEventsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = eEventsTableViewController.m; sourceTree = "<group>"; };
+		C1A14AEC18A7C53F00407BD0 /* eAddEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eAddEventViewController.h; sourceTree = "<group>"; };
+		C1A14AED18A7C53F00407BD0 /* eAddEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = eAddEventViewController.m; sourceTree = "<group>"; };
+		C1A14AEF18A7C69000407BD0 /* eEventItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eEventItem.h; sourceTree = "<group>"; };
+		C1A14AF018A7C69000407BD0 /* eEventItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = eEventItem.m; sourceTree = "<group>"; };
 		C1AE3FC218A3F7A400774DAB /* Days Since.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Days Since.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1AE3FC518A3F7A400774DAB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C1AE3FC718A3F7A400774DAB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -52,7 +65,6 @@
 		C1AE3FD518A3F7A400774DAB /* Days Since-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Days Since-Prefix.pch"; sourceTree = "<group>"; };
 		C1AE3FD618A3F7A400774DAB /* eAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = eAppDelegate.h; sourceTree = "<group>"; };
 		C1AE3FD718A3F7A400774DAB /* eAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = eAppDelegate.m; sourceTree = "<group>"; };
-		C1AE3FDA18A3F7A400774DAB /* Days_Since.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Days_Since.xcdatamodel; sourceTree = "<group>"; };
 		C1AE3FDC18A3F7A400774DAB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C1AE3FE218A3F7A400774DAB /* Days SinceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Days SinceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1AE3FE318A3F7A400774DAB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -60,8 +72,6 @@
 		C1AE3FEE18A3F7A400774DAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C1AE3FF018A3F7A400774DAB /* Days_SinceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Days_SinceTests.m; sourceTree = "<group>"; };
 		C1AE3FFA18A3F85900774DAB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		C1AE3FFC18A3F8EC00774DAB /* eUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eUIViewController.h; sourceTree = "<group>"; };
-		C1AE3FFD18A3F8EC00774DAB /* eUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = eUIViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,14 +142,21 @@
 		C1AE3FCD18A3F7A400774DAB /* Days Since */ = {
 			isa = PBXGroup;
 			children = (
+				C1AE3FDC18A3F7A400774DAB /* Images.xcassets */,
+				C1AE3FCE18A3F7A400774DAB /* Supporting Files */,
 				C192E15118A523E3001F5664 /* Resources */,
 				C1AE3FD618A3F7A400774DAB /* eAppDelegate.h */,
 				C1AE3FD718A3F7A400774DAB /* eAppDelegate.m */,
-				C1AE3FFC18A3F8EC00774DAB /* eUIViewController.h */,
-				C1AE3FFD18A3F8EC00774DAB /* eUIViewController.m */,
-				C1AE3FDC18A3F7A400774DAB /* Images.xcassets */,
-				C1AE3FD918A3F7A400774DAB /* Days_Since.xcdatamodeld */,
-				C1AE3FCE18A3F7A400774DAB /* Supporting Files */,
+				C1A14AEF18A7C69000407BD0 /* eEventItem.h */,
+				C1A14AF018A7C69000407BD0 /* eEventItem.m */,
+				C1A14AE318A7C4E300407BD0 /* eMainViewController.h */,
+				C1A14AE418A7C4E300407BD0 /* eMainViewController.m */,
+				C1A14AE618A7C4F700407BD0 /* eOptionsViewController.h */,
+				C1A14AE718A7C4F700407BD0 /* eOptionsViewController.m */,
+				C1A14AE918A7C51E00407BD0 /* eEventsTableViewController.h */,
+				C1A14AEA18A7C51E00407BD0 /* eEventsTableViewController.m */,
+				C1A14AEC18A7C53F00407BD0 /* eAddEventViewController.h */,
+				C1A14AED18A7C53F00407BD0 /* eAddEventViewController.m */,
 				C1AE3FFA18A3F85900774DAB /* Main.storyboard */,
 				C192E15818A54C25001F5664 /* CoreData.xcdatamodeld */,
 			);
@@ -273,11 +290,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1AE3FFE18A3F8EC00774DAB /* eUIViewController.m in Sources */,
+				C1A14AEB18A7C51E00407BD0 /* eEventsTableViewController.m in Sources */,
 				C1AE3FD818A3F7A400774DAB /* eAppDelegate.m in Sources */,
+				C1A14AEE18A7C53F00407BD0 /* eAddEventViewController.m in Sources */,
+				C1A14AE518A7C4E300407BD0 /* eMainViewController.m in Sources */,
 				C192E15A18A54C25001F5664 /* CoreData.xcdatamodeld in Sources */,
-				C1AE3FDB18A3F7A400774DAB /* Days_Since.xcdatamodeld in Sources */,
+				C1A14AF118A7C69000407BD0 /* eEventItem.m in Sources */,
 				C1AE3FD418A3F7A400774DAB /* main.m in Sources */,
+				C1A14AE818A7C4F700407BD0 /* eOptionsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,16 +519,6 @@
 			);
 			currentVersion = C192E15918A54C25001F5664 /* CoreData.xcdatamodel */;
 			path = CoreData.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		C1AE3FD918A3F7A400774DAB /* Days_Since.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				C1AE3FDA18A3F7A400774DAB /* Days_Since.xcdatamodel */,
-			);
-			currentVersion = C1AE3FDA18A3F7A400774DAB /* Days_Since.xcdatamodel */;
-			path = Days_Since.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
