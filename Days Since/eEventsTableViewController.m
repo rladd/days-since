@@ -8,9 +8,13 @@
 
 #import "eEventsTableViewController.h"
 
+
+
 @interface eEventsTableViewController ()
 
 @end
+
+
 
 @implementation eEventsTableViewController
 
@@ -117,4 +121,6 @@
 
  */
 
+- (IBAction)refreshButton:(id)sender {
+}
 @end

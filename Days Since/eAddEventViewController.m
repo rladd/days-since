@@ -14,6 +14,29 @@
 
 @implementation eAddEventViewController
 
+
+- (IBAction)saveButton:(id)sender {
+    
+    eAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    
+    NSManagedObjectContext *context = [appDelegate managedObjectContext];
+    
+    NSManagedObject *newEvent;
+    
+    newEvent = [NSEntityDescription insertNewObjectForEntityForName:@"Events" inManagedObjectContext:context];
+    
+    [newEvent setValue: _eventNameTextField.text forKey:@"eventName"];
+    
+    _eventNameTextField.text = @"";
+    
+    NSError *error;
+    
+    [context save:&error];
+    
+    _statusLabel.text = @"Event saved";
+    
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

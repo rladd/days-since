@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "eAppDelegate.h"
 
 @interface eEventsTableViewController : UITableViewController
+
+@property (weak, nonatomic) IBOutlet UITableViewCell *eventCell;
+
 
 @end

@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "eAppDelegate.h"
 
 @interface eAddEventViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UITextField *eventNameTextField;
+
+@property (weak, nonatomic) IBOutlet UILabel *statusLabel;
+
+- (IBAction)saveButton:(id)sender;
+
 
 @end
