@@ -9,9 +9,16 @@
 #import <UIKit/UIKit.h>
 #import "eAppDelegate.h"
 
-@interface eEventsTableViewController : UITableViewController
+@interface eEventsTableViewController : UITableViewController<UITableViewDelegate,UITableViewDataSource, NSFetchedResultsControllerDelegate>
+{
+    NSManagedObjectContext *managedObjectContext;
+    NSFetchedResultsController *requestResultsController;
+    NSArray *requestObjects;
+}
 
 @property (weak, nonatomic) IBOutlet UITableViewCell *eventCell;
-
+@property (nonatomic) NSFetchedResultsController *requestResultsController;
+@property (nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic,strong)  NSArray *requestObjects;
 
 @end

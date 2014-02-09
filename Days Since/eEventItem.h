@@ -10,4 +10,6 @@
 
 @interface eEventItem : NSObject
 
+@property NSString *eventName;
+
 @end

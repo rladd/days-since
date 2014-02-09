@@ -7,16 +7,19 @@
 //
 
 #import "eEventsTableViewController.h"
+#import "eAppDelegate.h"
+#import "eEventItem.h"
 
-
-
-@interface eEventsTableViewController ()
+@interface eEvents : UITableViewController<UITableViewDelegate,UITableViewDataSource, NSFetchedResultsControllerDelegate>
 
 @end
 
 
-
 @implementation eEventsTableViewController
+
+@synthesize managedObjectContext;
+@synthesize requestResultsController;
+@synthesize requestObjects;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -30,7 +33,33 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
+    eAppDelegate *appDelegate =[[UIApplication sharedApplication]delegate];
+    NSManagedObjectContext *context =[appDelegate managedObjectContext];
+    NSError *error;
+    
+    if (managedObjectContext != nil) {
+        if ([managedObjectContext hasChanges] &&[managedObjectContext save:&error]) {
+            NSLog(@"Unresolved error %@,%@",error, [error userInfo]);
+            abort();
+        }
+    }
+    
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Events" inManagedObjectContext:context];
+    
+    [request setEntity:entity];
+    
+    requestObjects = [context executeFetchRequest:request error:&error];
+    
+    /*
+    // Testing the core data read
+    for (NSManagedObject *event in requestObjects) {
+        NSLog(@"Event Name: %@", [event valueForKey:@"eventName"]);
+    }
+    */
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -48,27 +77,35 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    NSInteger rowCount = [requestObjects count];
+    return rowCount;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *identifier = @"identifier";
     
-    // Configure the cell...
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+    }
+    
+    eEventItem *eventItem = [requestObjects objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = eventItem.eventName;
     
     return cell;
+    
 }
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -121,6 +158,4 @@
 
  */
 
-- (IBAction)refreshButton:(id)sender {
-}
 @end
