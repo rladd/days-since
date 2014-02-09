@@ -125,27 +125,6 @@
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="iDk-fc-pCS">
-                                <rect key="frame" x="0.0" y="130" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iDk-fc-pCS" id="OSD-NB-DZq">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QkM-Z4-nt1">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                            <items>
-                                                <barButtonItem title="Refresh" id="yXS-xB-6Wb">
-                                                    <connections>
-                                                        <action selector="refreshButton:" destination="H3f-9T-Ent" id="0HU-Dv-qk7"/>
-                                                    </connections>
-                                                </barButtonItem>
-                                            </items>
-                                        </toolbar>
-                                    </subviews>
-                                </tableViewCellContentView>
-                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="H3f-9T-Ent" id="aCO-Ws-0Q7"/>
@@ -166,7 +145,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="cellTitle" destination="WaO-MU-XAB" id="9l8-uI-7xR"/>
-                        <outlet property="refreshButton" destination="QkM-Z4-nt1" id="6Oc-ig-9w7"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uUu-KD-L48" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -219,7 +197,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add / Edit Event" id="6k1-gc-xQs">
-                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="Gxc-ZF-zyq">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Gxc-ZF-zyq">
                             <connections>
                                 <segue destination="JmF-je-Jfm" kind="modal" id="hx0-Lz-CCZ"/>
                             </connections>
@@ -260,7 +238,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Options" id="47W-9U-kJQ">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="WLr-0b-FAO">
+                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="done" id="WLr-0b-FAO">
                             <connections>
                                 <segue destination="rQN-BM-zF2" kind="modal" id="UbO-Yb-1jI"/>
                             </connections>
@@ -351,6 +329,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="hx0-Lz-CCZ"/>
-        <segue reference="FEL-bj-HM0"/>
+        <segue reference="fce-Ai-9hy"/>
     </inferredMetricsTieBreakers>
 </document>

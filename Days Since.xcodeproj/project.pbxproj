@@ -14,6 +14,7 @@
 		C1A14AEB18A7C51E00407BD0 /* eEventsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A14AEA18A7C51E00407BD0 /* eEventsTableViewController.m */; };
 		C1A14AEE18A7C53F00407BD0 /* eAddEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A14AED18A7C53F00407BD0 /* eAddEventViewController.m */; };
 		C1A14AF118A7C69000407BD0 /* eEventItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A14AF018A7C69000407BD0 /* eEventItem.m */; };
+		C1A14AF318A83F8900407BD0 /* days_since_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C1A14AF218A83F8900407BD0 /* days_since_icon.png */; };
 		C1AE3FC618A3F7A400774DAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AE3FC518A3F7A400774DAB /* Foundation.framework */; };
 		C1AE3FC818A3F7A400774DAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AE3FC718A3F7A400774DAB /* CoreGraphics.framework */; };
 		C1AE3FCA18A3F7A400774DAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AE3FC918A3F7A400774DAB /* UIKit.framework */; };
@@ -54,6 +55,7 @@
 		C1A14AED18A7C53F00407BD0 /* eAddEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = eAddEventViewController.m; sourceTree = "<group>"; };
 		C1A14AEF18A7C69000407BD0 /* eEventItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eEventItem.h; sourceTree = "<group>"; };
 		C1A14AF018A7C69000407BD0 /* eEventItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = eEventItem.m; sourceTree = "<group>"; };
+		C1A14AF218A83F8900407BD0 /* days_since_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = days_since_icon.png; sourceTree = "<group>"; };
 		C1AE3FC218A3F7A400774DAB /* Days Since.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Days Since.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1AE3FC518A3F7A400774DAB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C1AE3FC718A3F7A400774DAB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -103,6 +105,7 @@
 		C192E15118A523E3001F5664 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C1A14AF218A83F8900407BD0 /* days_since_icon.png */,
 				C192E15218A523E3001F5664 /* background.jpg */,
 			);
 			path = Resources;
@@ -270,6 +273,7 @@
 			files = (
 				C1AE3FFB18A3F85900774DAB /* Main.storyboard in Resources */,
 				C192E15418A523E3001F5664 /* background.jpg in Resources */,
+				C1A14AF318A83F8900407BD0 /* days_since_icon.png in Resources */,
 				C1AE3FD218A3F7A400774DAB /* InfoPlist.strings in Resources */,
 				C1AE3FDD18A3F7A400774DAB /* Images.xcassets in Resources */,
 			);
@@ -414,7 +418,6 @@
 		C1AE3FF518A3F7A400774DAB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Days Since/Days Since-Prefix.pch";
@@ -427,7 +430,6 @@
 		C1AE3FF618A3F7A400774DAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Days Since/Days Since-Prefix.pch";
