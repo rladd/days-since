@@ -16,12 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="00:03:01:15:56" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mNs-nh-VFW">
-                                <rect key="frame" x="20" y="196" width="280" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lz1-m8-3dw">
                                 <rect key="frame" x="30" y="167" width="120" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -65,27 +59,33 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor. " translatesAutoresizingMaskIntoConstraints="NO" id="CJY-ap-CLp">
-                                <rect key="frame" x="30" y="335" width="257" height="128"/>
+                                <rect key="frame" x="27" y="420" width="257" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tg5-98-rJe">
-                                <rect key="frame" x="106" y="464" width="99" height="30"/>
+                                <rect key="frame" x="97" y="327" width="116" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Refresh Quote">
+                                <accessibility key="accessibilityConfiguration" label="startButton"/>
+                                <state key="normal" title="Start Timer">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="startButton:" destination="50r-b9-4Vd" eventType="touchUpInside" id="bDF-aH-J1V"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:03:01:15:56" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VK0-gX-1a6">
+                                <rect key="frame" x="30" y="243" width="270" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="timerLabel"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="mNs-nh-VFW" firstAttribute="leading" secondItem="ooz-gl-yfw" secondAttribute="leading" constant="20" id="6Lc-Wq-oVC"/>
-                            <constraint firstAttribute="trailing" secondItem="mNs-nh-VFW" secondAttribute="trailing" constant="20" id="Hkm-tH-XCK"/>
-                            <constraint firstItem="17b-Lc-Gbr" firstAttribute="top" secondItem="mNs-nh-VFW" secondAttribute="bottom" constant="342" id="KUm-yW-UbR"/>
-                            <constraint firstItem="mNs-nh-VFW" firstAttribute="top" secondItem="o54-yB-FSl" secondAttribute="bottom" constant="132" id="PWf-O0-GSK"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Days Since" id="Rbw-pF-XG8">
                         <barButtonItem key="rightBarButtonItem" title="Options" id="4kw-oD-QeY">
@@ -94,6 +94,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="timerLabel" destination="VK0-gX-1a6" id="ae0-Xr-9v0"/>
+                        <outletCollection property="timerLabel" destination="ooz-gl-yfw" id="ORB-j4-5g1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L1z-xF-LpY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

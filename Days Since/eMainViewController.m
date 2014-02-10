@@ -10,9 +10,48 @@
 
 @interface eMainViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *timerLabel;
+
+ - (IBAction)startButton:(id)sender;
+
 @end
 
-@implementation eMainViewController
+@implementation eMainViewController {
+    
+    bool start;
+    
+    NSTimeInterval time;
+    
+}
+
+- (void) updateTimer
+{
+    if (start == false) {
+        return;
+    }
+    
+    NSTimeInterval currentTime = [NSDate timeIntervalSinceReferenceDate];
+    NSTimeInterval elapsedTime = currentTime - time;
+    
+    int minutes = (int)(elapsedTime / 60.0);
+    int seconds = (int)(elapsedTime - (minutes * 60.0));
+    
+    self.timerLabel.text = [NSString stringWithFormat:@"%u:%02u", minutes, seconds];
+    
+    [self performSelector:@selector(updateTimer) withObject:self afterDelay:0.1];
+    
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	
+    // Do any additional setup after loading the view.
+    self.timerLabel.text = @"0:00";
+ 
+    start = false;
+    
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -23,16 +62,30 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
-}
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)startButton:(id)sender {
+    
+    if (start == false) {
+        start = true;
+        time = [NSDate timeIntervalSinceReferenceDate];
+        [sender setTitle:@"Stop!" forState:UIControlStateNormal];
+        [self updateTimer];
+    } else {
+        start = false;
+        [sender setTitle:@"Start Timer" forState:UIControlStateNormal];
+        
+    }
+    
+    
+}
+
+
+
+
 
 @end
