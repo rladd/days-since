@@ -66,7 +66,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tg5-98-rJe">
-                                <rect key="frame" x="97" y="327" width="116" height="30"/>
+                                <rect key="frame" x="97" y="319" width="116" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" label="startButton"/>
                                 <state key="normal" title="Start Timer">
@@ -91,13 +91,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3K-Cc-U05">
-                                <rect key="frame" x="20" y="302" width="280" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -109,7 +102,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="testLabel" destination="t3K-Cc-U05" id="QBQ-Be-dDY"/>
                         <outlet property="timerLabel" destination="VK0-gX-1a6" id="ae0-Xr-9v0"/>
                         <outletCollection property="timerLabel" destination="ooz-gl-yfw" id="ORB-j4-5g1"/>
                     </connections>
